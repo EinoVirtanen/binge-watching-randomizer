@@ -1,4 +1,4 @@
-### Usage ###
+## Usage ##
 0. Modify vlc settings so that it starts in fullscreen mode and exits after file has been played
 1. Place bunch of video files in one directory
 2. Input this directory for the script
