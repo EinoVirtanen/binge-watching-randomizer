@@ -1,6 +1,6 @@
 ## Usage ##
-0. Modify vlc settings so that it starts in fullscreen mode and exits after file has been played
-1. Place bunch of video files in one directory
+0. Modify vlc settings so that it starts in fullscreen mode and exits after a file has been played
+1. Place bunch of video or audio files in one directory
 2. Input this directory for the script
 3. The script will loop the following
 	1. Play a random media file
