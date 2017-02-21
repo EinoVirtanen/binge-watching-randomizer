@@ -27,15 +27,15 @@ while (( mediaamount > 0 )); do
 	let "number%=$mediaamount"
 	let "number+=1"
 
-	file=$(ls -mw0 $mediadir | cut -d, -f$number | cut -d" " -f2)
+	file=$(ls -x $mediadir | cut -d$'\n' -f$number)
 
-	vlc $mediadir/$file
+	vlc "$mediadir/$file"
 	
 	if [ ! -d "$mediadir/.watched" ]; then
 		mkdir $mediadir/.watched
 	fi
 
-	mv $mediadir/$file $mediadir/.watched
+	mv "$mediadir/$file" $mediadir/.watched
 
 	mediaamount=$(ls -1 $mediadir | wc -l)
 
